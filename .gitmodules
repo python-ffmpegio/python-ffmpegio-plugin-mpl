@@ -1,0 +1,3 @@
+[submodule "ffmpegio"]
+	path = ffmpegio
+	url = https://tikuma-lsuhsc@github.com/python-ffmpegio/python-ffmpegio.git
