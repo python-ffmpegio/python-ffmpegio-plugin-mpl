@@ -19,7 +19,10 @@ def video_info(obj: Figure) -> Tuple[Tuple[int, int, int], str]:
     :return: shape (height,width,4) and data type "|u1" (rgba)
     :rtype: Tuple[Tuple[int, int, int], str]
     """
-    return (int(obj.bbox.bounds[3]), int(obj.bbox.bounds[2]), 4), "|u1"
+    try:
+        return (int(obj.bbox.bounds[3]), int(obj.bbox.bounds[2]), 4), "|u1"
+    except:
+        return None
 
 
 @hookimpl
@@ -32,7 +35,11 @@ def video_bytes(obj: Figure) -> memoryview:
     :rtype: memoryview
     """
 
-    with io.BytesIO() as io_buf:
-        obj.savefig(io_buf, format="raw")
-        io_buf.seek(0)
-        return io_buf.getvalue()
+    try:
+        with io.BytesIO() as io_buf:
+            obj.savefig(io_buf, format="raw")
+            io_buf.seek(0)
+            return io_buf.getvalue()
+    except:
+        None
+        
