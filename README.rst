@@ -3,16 +3,19 @@
 
 |pypi| |pypi-status| |pypi-pyvers| |github-license| |github-status|
 
-.. |pypi| image:: https://img.shields.io/pypi/v/ffmpegio
+.. |pypi| image:: https://img.shields.io/pypi/v/ffmpegio-plugin-mpl
   :alt: PyPI
-.. |pypi-status| image:: https://img.shields.io/pypi/status/ffmpegio
+.. |pypi-status| image:: https://img.shields.io/pypi/status/ffmpegio-plugin-mpl
   :alt: PyPI - Status
-.. |pypi-pyvers| image:: https://img.shields.io/pypi/pyversions/ffmpegio
+.. |pypi-pyvers| image:: https://img.shields.io/pypi/pyversions/ffmpegio-plugin-mpl
   :alt: PyPI - Python Version
-.. |github-license| image:: https://img.shields.io/github/license/python-ffmpegio/python-ffmpegio
+.. |github-license| image:: https://img.shields.io/github/license/python-ffmpegio/ffmpegio-plugin-mpl
   :alt: GitHub License
-.. |github-status| image:: https://img.shields.io/github/workflow/status/python-ffmpegio/python-ffmpegio/Run%20Tests
-  :alt: GitHub Workflow Status
+
+::
+
+  This plugin has been merged to the main `ffmpegio` package since `v0.11.0`.
+
 
 This plugin enables Python `ffmpegio` package to output matplotlib's Figure.
 
